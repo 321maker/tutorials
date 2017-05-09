@@ -27,11 +27,11 @@ void loop() { //The loop function runs forever.
     if(random(100) < probRed){  //Get random number and determine if it is red or blue.
       digitalWrite(redLed, HIGH);//Turn on the red LED.
       delay(2000); //Wait 2 seconds before making sure the lights are turned off.
-      digitalWrite(blueLed, LOW);//Turn off the blue LED.
+      digitalWrite(redLed, LOW);//Turn off the blue LED.
       } else {
       digitalWrite(blueLed, HIGH);//Turn on the blue LED.
       delay(2000); //Wait 2 seconds before making sure the lights are turned off.
-      digitalWrite(redLed, LOW);//Turn off the red LED.
-
+      digitalWrite(blueLed, LOW);//Turn off the red LED.
     }
+  }
 }
